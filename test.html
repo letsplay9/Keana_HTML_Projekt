@@ -1,0 +1,8 @@
+var i = 0; var bilder = new Array("baer1.jpg", "pingu.jpg", "baer2.jpg");
+      function wechsel() { i = (i + 1) % bilder.length; document.images[1].src = bilder[i]; }
+  </script>
+
+</head>
+<body>
+  <p><img src="bo1.jpg" onmouseover="document.images[0].src='bo2.jpg'" onmouseout="document.images[0].src='bo1.jpg'" alt="Weihnachtsbotschaft"/>
+  <img src="baer1.jpg" onmouseover="wechsel()" onmouseout="wechsel()" alt="Bären oder Pinguine"/></p>
