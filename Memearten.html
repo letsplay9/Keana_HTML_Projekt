@@ -8,6 +8,10 @@
     <link rel="stylesheet" type="text/css" href="Memearten.css">
     <link rel="stylesheet" type="text/css" href="grid.css">
     <link href="navbar.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+      var i = 0; var bilder = new Array("cool.jpg", "funny.jpg", "smart.jpg");
+      function wechsel() { i = (i + 1) % bilder.length; document.images[1].src = bilder[i]; }
+    </script>
   </head>
   <body>
     <header>
@@ -35,7 +39,7 @@
     <div class="grid-row">
     <h1 class="col-xs-12"> Die Arten von Memes </h1>
       <div class="col-l-4 col-xl-4 MemeartenBox">
-        <img src="memes/smart.jpeg" alt="Flowers in Chania">
+        <img src="memes/smart.jpeg" onmouseover="wechsel()" alt="Flowers in Chania">
         <h2> 1. Satirische Memes </h2>
         <p> Diese Art von Memes finden gebrauch in sozialen Netzwerken, um dort auf unterschiedliche Art und Weise auf wirtschaftliche,
         politische und gesellschaftliche Konflikte hinzuweisen, sowie diese zu kritisieren. Diese Art von Memes zeigt, dass diese
