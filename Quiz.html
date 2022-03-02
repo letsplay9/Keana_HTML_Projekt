@@ -37,39 +37,30 @@
             <span></span>
         </label>
     </header>
-    <div class="grid-row">
-    <h1 class="col-xs-12 MemeartenHead"> Die Arten von Memes </h1>
-      <div class="col-l-4 col-xl-4 MemeartenBox">
-        <div onmouseover="wechsel(0)" class="img_kasten">
-          <img src="memes/smart.jpeg" alt="Flowers in Chania">
-        </div>
-        <h2> 1. Satirische Memes </h2>
-        <p> Diese Art von Memes finden gebrauch in sozialen Netzwerken, um dort auf unterschiedliche Art und Weise auf wirtschaftliche,
-        politische und gesellschaftliche Konflikte hinzuweisen, sowie diese zu kritisieren. Diese Art von Memes zeigt, dass diese
-        nicht nur ein Mittel zur Unterhaltung sind, sondern dass es Matrizen von Meinungen und kulturellen Werten kommuniziert.
-        Sie beschäftigen sich mit Ereignissen wie Wahlen und wichtigen Spielen, und obwohl der Inhalt oft trivial ist, kann er auch
-        zur Diffamierung und ideologischen Kriegsführung verwendet werden. </p></div>
-    <div class="col-l-4 col-xl-4 MemeartenBox">
-      <div onmouseover="wechsel(1)" class="img_kasten">
-        <img src="memes/funny.jpeg" alt="Flowers in Chania">
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+         <h2 id="question">Question is loading...</h2>
+         <ul>
+            <li>
+               <input type="radio" name="answer" id="a" class="answer" />
+               <label for="a" id="a_text">Answer...</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="b" class="answer" />
+              <label for="b" id="b_text">Answer...</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="c" class="answer" />
+              <label for="c" id="c_text">Answer...</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="d" class="answer" />
+              <label for="d" id="d_text">Answer...</label>  
+            </li>
+         </ul>
       </div>
-      <h2> 2. Humoristische Memes </h2>
-        <p> Das Meme dient grundsätzlich der persönlichen Unterhaltung und fungiert als eine Form von Zeitvertreib. Hierbei wird oft die
-        eigene Lebenssituation auf selbstironische Art kommentiert, wobei dort gezielt Situationen beschrieben werden, bei welchen es
-        vielen Menschen ähnlich geht. Zudem werden auch bestimmte Ereignisse oder die Aussagen und Taten von berühmten Personen auf
-        ähnliche Weise kommentiert. Sie sind die am meistgenutzten Memes. Dabei darf man sie nicht mit Memes verwechseln,
-        die eine andere Absicht haben (z. B. das Bewerben eines Produkts), und dessen Sinn lediglich nur der Ausdruck der
-        eigenen Ansicht/Meinung ist. </p></div>
-    <div class="col-l-4 col-xl-4 MemeartenBox">
-      <div onmouseover="wechsel(2)" class="img_kasten">
-        <img src="memes/cool.jpeg" alt="Flowers in Chania">
-      </div>
-      <h2> 3. Motivierende Memes </h2>
-          <p> Diese Art von Memes haben das Ziel, eine motivierende oder zum Nachdenken anregende Botschaft zu überliefern.
-          Hier kommen oft Grafiken, Bilder oder Gifs zur Verwendung. Behandelte Themen können hier auf spiritueller Ebene sein, sich aber
-          auch lediglich auf den allgemeinen Alltag und die eigene mentale Gesundheit beziehen. Memes dieser Art gehen oft "viral",
-          wobei hier in verschieden Unterkategorien wie dunkle Humor-Memes oder grüne Humor-Memes gegliedert wird. </p></div>
-    </div>
+      <button id="submit">Submit</button>
+   </div>
 
 
   </body>
