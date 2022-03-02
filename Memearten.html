@@ -11,9 +11,9 @@
     <script type="text/javascript">
       var i = 0;
       var bilder = new Array("memes/cool.jpeg", "memes/funny.jpeg", "memes/smart.jpeg");
-      function wechsel() {
+      function wechsel(z) {
         i = (i + 1) % bilder.length;
-        document.images[1].src = bilder[i];
+        document.images[z].src = bilder[i];
       }
     </script>
   </head>
@@ -43,8 +43,8 @@
     <div class="grid-row">
     <h1 class="col-xs-12"> Die Arten von Memes </h1>
       <div class="col-l-4 col-xl-4 MemeartenBox">
-        <div class="img_kasten">
-          <img src="memes/smart.jpeg" onmouseover="wechsel()" alt="Flowers in Chania">
+        <div onmouseover="wechsel(0)" class="img_kasten">
+          <img src="memes/smart.jpeg" alt="Flowers in Chania">
         </div>
         <h2> 1. Satirische Memes </h2>
         <p> Diese Art von Memes finden gebrauch in sozialen Netzwerken, um dort auf unterschiedliche Art und Weise auf wirtschaftliche,
@@ -53,7 +53,7 @@
         Sie beschäftigen sich mit Ereignissen wie Wahlen und wichtigen Spielen, und obwohl der Inhalt oft trivial ist, kann er auch
         zur Diffamierung und ideologischen Kriegsführung verwendet werden. </p></div>
     <div class="col-l-4 col-xl-4 MemeartenBox">
-      <div class="img_kasten">
+      <div onmouseover="wechsel(1)" class="img_kasten">
         <img src="memes/funny.jpeg" alt="Flowers in Chania">
       </div>
       <h2> 2. Humoristische Memes </h2>
@@ -64,7 +64,7 @@
         die eine andere Absicht haben (z. B. das Bewerben eines Produkts), und dessen Sinn lediglich nur der Ausdruck der
         eigenen Ansicht/Meinung ist. </p></div>
     <div class="col-l-4 col-xl-4 MemeartenBox">
-      <div class="img_kasten">
+      <div onmouseover="wechsel(2)" class="img_kasten">
         <img src="memes/cool.jpeg" alt="Flowers in Chania">
       </div>
       <h2> 3. Motivierende Memes </h2>
