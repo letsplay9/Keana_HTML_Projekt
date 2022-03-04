@@ -48,6 +48,10 @@ img {
 .MemeartenBox p {
   line-height: 1.5;
 }
+#url {
+  color: black;
+  background-color: #f3d763;
+}
 .MemeartenBox h2 {
   text-align: center;
   font-size: 200%;

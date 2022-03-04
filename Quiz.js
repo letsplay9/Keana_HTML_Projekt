@@ -1,10 +1,10 @@
 const quizData = [
   {
-   question: "Which language runs in a web browser?",
-   a: "Java",
-   b: "C",
-   c: "Python",
-   d: "JavaScript",
+   question: "In welchem Jahr tauchte der Begriff Meme erstmalig auf?",
+   a: "1971",
+   b: "1997",
+   c: "2002",
+   d: "1976",
    correct: "d",
   },
   {
@@ -70,9 +70,9 @@ const quizData = [
    if (currentQuiz < quizData.length) loadQuiz();
    else {
     quiz.innerHTML = `
-       <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-       <button onclick="history.go(0)">Play Again</button>
-     ` // location.reload() won't work in CodePen for security reasons;
+       <h2>Du hast ${score}/${quizData.length} Fragen richtig beantwortet! &#10024;</h2>
+       <button onclick="history.go(0)">Nochmal spielen</button>
+       `
    }
   }
- });  
+ });
