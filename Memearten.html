@@ -9,11 +9,29 @@
     <link rel="stylesheet" type="text/css" href="grid.css">
     <link href="navbar.css" rel="stylesheet" type="text/css">
     <script type="text/javascript">
-      var i = 0;
-      var bilder = new Array("memes/cool.jpeg", "memes/funny.jpeg", "memes/smart.jpeg");
-      function wechsel(z) {
-        i = (i + 1) % bilder.length;
-        document.images[z].src = bilder[i];
+      var i = new Array(0, 0, 0);
+      var bilder1 = new Array("memearten/cool.jpeg", "memearten/funny.jpeg", "memearten/smart.jpeg");
+      var bilder2 = new Array("memearten/motivation1.jpg", "memearten/motivation2.jpg", "memearten/motivation3.jpg");
+      var bilder3 = new Array("memearten/cool.jpeg", "memearten/funny.jpeg", "memearten/smart.jpeg");
+      function wechsel(box) {
+        console.log(box);
+        switch (box) {
+          case 0:
+            i[box] = (i[box] + 1) % bilder1.length;
+            document.images[box].src = bilder1[i[box]];
+            break;
+          case 1:
+            i[box] = (i[box] + 1) % bilder2.length;
+            document.images[box].src = bilder2[i[box]];
+            break;
+          case 2:
+            i[box] = (i[box] + 1) % bilder3.length;
+            document.images[box].src = bilder3[i[box]];
+            break;
+          default:
+
+        }
+
       }
     </script>
   </head>
@@ -51,7 +69,7 @@
         zur Diffamierung und ideologischen Kriegsführung verwendet werden. </p></div>
     <div class="col-l-4 col-xl-4 MemeartenBox">
       <div onmouseover="wechsel(1)" class="img_kasten2">
-        <img src="memes/funny.jpeg" alt="Flowers in Chania">
+        <img src="memearten/funny.jpeg" alt="Flowers in Chania">
       </div>
       <h2> 2. Humoristische Memes </h2>
         <p> Das Meme dient grundsätzlich der persönlichen Unterhaltung und fungiert als eine Form von Zeitvertreib. Hierbei wird oft die
