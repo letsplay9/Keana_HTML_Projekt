@@ -1,5 +1,9 @@
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap%27);
 body {
   color: #dddddd
+}
+p {
+  font-family: "PT Sans Narrow", sans-serif;
 }
 .MemeartenHead{
   padding-top: 4rem;
@@ -9,7 +13,23 @@ body {
 .MemeartenBox {
   overflow: hidden;
 }
-.img_kasten{
+.img_kasten1{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #f3d763;
+  border-radius: 10%;
+  overflow: hidden;
+  z-index: 100;
+}
+.img_kasten2{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #f3d763;
+  border-radius: 10%;
+  overflow: hidden;
+  z-index: 100;
+}
+.img_kasten3{
   width: 100%;
   aspect-ratio: 1 / 1;
   background-color: #f3d763;
