@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap%27');
+
+main {
+    position: relative;
+    top: 80px;
+}
+
+.flex-row {
+    position: relative;
+    display: flex;
+    color: black;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.object {
+    background: #F6D155;
+    border-radius: 5px;
+}
+
+#headline, #text, #source {
+    padding: 10px;
+}
+
+#headline {
+    font-size: 26px;
+}
+
+#text {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#source {
+    font-size: 12px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.picture-row {
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
+
+.picture-column {
+    flex: 33.33%;
+    padding: 10px;
+}
+
+.picture-column img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#blank {
+    padding: 10px;
+    visibility: hidden;
+}
+
+.fancy-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.seperator {
+    border-bottom: 6px solid #F6D155;
+    width: 40vw;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 6px solid #F6D155;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.facts-row {
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+}
+
+.facts-column {
+    flex: 33.33%;
+    padding: 10px;
+    background: #F6D155;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .flex-row {
+        position: relative;
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .picture-row {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .picture-column {
+        padding: 10px;
+    }
+
+    .facts-row {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    
+    .facts-column {
+        padding: 10px;
+    }
+    
+}
+
+
+
+
+
