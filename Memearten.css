@@ -56,3 +56,12 @@ img {
   text-align: center;
   font-size: 200%;
 }
+.hover_bereich{
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  aspect-ratio: 1 / 1;
+}
+.inhalt{
+  padding-bottom: 50px;
+}
